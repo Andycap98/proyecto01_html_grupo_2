@@ -17,9 +17,37 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Quicksand", sans-serif;
     background-color: #FFFDF5;
     color: #3D245C;
+}
+/* ========================================
+   TIPOGRAFÍAS
+   ======================================== */
+
+h1,
+h2,
+h3,
+.logo {
+    font-family: "Cinzel", serif;
+}
+
+h1 {
+    letter-spacing: 2px;
+}
+
+h2 {
+    letter-spacing: 2px;
+}
+
+nav a {
+    font-family: "Cinzel", serif;
+    letter-spacing: 1px;
+}
+
+button,
+.boton-empezar {
+    font-family: "Quicksand", sans-serif;
 }
 header {
     background-color: #3D245C;
@@ -112,6 +140,24 @@ nav a:hover {
     font-size: 30px;
     letter-spacing: 12px;
     margin-bottom: 15px;
+
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
 }
 .presentacion h2 {
     max-width: 800px;
@@ -148,6 +194,8 @@ nav a:hover {
     color: #FFFDF5;
 
     transform: translateY(-3px);
+
+    box-shadow: 0 0 20px #F4C95D;
 }
 /* ========================================
    MIS HOBBIES
@@ -205,8 +253,11 @@ nav a:hover {
 }
 
 .imagen-hobby:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px) scale(1.05);
+
     border-color: #F4C95D;
+
+    box-shadow: 0 8px 20px rgba(61, 36, 92, 0.25);
 }
 
 .hobby h3 {
