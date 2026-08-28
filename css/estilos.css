@@ -1,0 +1,431 @@
+/* ========================================
+   MI PRIMER SITIO - ANDREA CAPPIELLO
+   Paleta mística
+   ========================================
+
+   Violeta oscuro: #3D245C
+   Violeta:        #7651A8
+   Lavanda:        #E9DDF7
+   Dorado:         #F4C95D
+   Verde:          #6A994E
+   Crema:          #FFFDF5
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFDF5;
+    color: #3D245C;
+}
+header {
+    background-color: #3D245C;
+    color: #FFFDF5;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 8%;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+
+    background-color: #F4C95D;
+    color: #3D245C;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid #6A994E;
+    border-radius: 50%;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+header h1 {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+/* ========================================
+   BARRA DE NAVEGACIÓN
+   ======================================== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    padding: 14px;
+
+    background-color: #E9DDF7;
+
+    border-bottom: 2px solid #F4C95D;
+}
+nav a {
+    color: #3D245C;
+
+    text-decoration: none;
+
+    font-weight: bold;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #6A994E;
+    transform: translateY(-2px);
+}
+/* ========================================
+   PRESENTACIÓN
+   ======================================== */
+
+.presentacion {
+    min-height: 420px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #3D245C,
+        #7651A8
+    );
+
+    color: #FFFDF5;
+}
+.simbolos {
+    color: #F4C95D;
+    font-size: 30px;
+    letter-spacing: 12px;
+    margin-bottom: 15px;
+}
+.presentacion h2 {
+    max-width: 800px;
+
+    margin: 10px 0;
+
+    font-size: 34px;
+    line-height: 1.3;
+}
+.presentacion p {
+    margin-bottom: 30px;
+
+    font-size: 17px;
+    color: #E9DDF7;
+}
+.boton-empezar {
+    display: inline-block;
+
+    padding: 12px 28px;
+
+    background-color: #F4C95D;
+    color: #3D245C;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border: 2px solid #6A994E;
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+.boton-empezar:hover {
+    background-color: #6A994E;
+    color: #FFFDF5;
+
+    transform: translateY(-3px);
+}
+/* ========================================
+   MIS HOBBIES
+   ======================================== */
+
+.hobbies {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FFFDF5;
+}
+
+.hobbies h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    color: #3D245C;
+    font-size: 30px;
+}
+
+.contenedor-hobbies {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    gap: 35px;
+}
+
+.hobby {
+    width: 200px;
+    text-align: center;
+}
+
+.imagen-hobby {
+    width: 200px;
+    height: 200px;
+
+    overflow: hidden;
+
+    border: 3px solid #6A994E;
+    border-radius: 20px;
+
+    background-color: #E9DDF7;
+
+    transition: 0.3s;
+}
+
+.imagen-hobby img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.imagen-hobby:hover {
+    transform: translateY(-8px);
+    border-color: #F4C95D;
+}
+
+.hobby h3 {
+    margin-top: 12px;
+
+    color: #3D245C;
+    font-size: 17px;
+}
+/* ========================================
+   PIE DE PÁGINA
+   ======================================== */
+
+footer {
+    background-color: #3f3f3f;
+    color: #FFFDF5;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.redes a {
+    color: #F4C95D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redes a:hover {
+    color: #E9DDF7;
+}
+
+.redes span {
+    color: #FFFDF5;
+}
+/* ========================================
+   FOOTER EN PANTALLAS PEQUEÑAS
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .redes {
+        justify-content: center;
+    }
+
+}
+/* ========================================
+   SOBRE MÍ
+   ======================================== */
+
+.sobre-mi {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #E9DDF7;
+}
+
+.sobre-mi h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #3D245C;
+    margin-bottom: 35px;
+}
+
+.contenedor-sobre-mi {
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.foto {
+    width: 220px;
+    height: 220px;
+
+    flex-shrink: 0;
+    overflow: hidden;
+
+    border: 3px solid #F4C95D;
+    border-radius: 20px;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.descripcion {
+    max-width: 500px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   MIS PROYECTOS
+   ======================================== */
+
+.proyectos {
+    padding: 60px 20px;
+
+    text-align: center;
+
+    background-color: #FFFDF5;
+}
+
+.proyectos h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    font-size: 30px;
+    color: #3D245C;
+}
+
+.proyectos p {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   CONTACTO
+   ======================================== */
+
+.contacto {
+    padding: 60px 20px;
+
+    text-align: center;
+
+    background-color: #E9DDF7;
+}
+
+.contacto h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    color: #3D245C;
+}
+
+.contacto form {
+    max-width: 450px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.contacto input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 2px solid #7651A8;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+.contacto button {
+    padding: 12px 30px;
+
+    background-color: #F4C95D;
+    color: #3D245C;
+
+    border: 2px solid #6A994E;
+    border-radius: 20px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: #6A994E;
+    color: #FFFDF5;
+}
+
+
+/* ========================================
+   ADAPTACIÓN PARA CELULAR
+   ======================================== */
+
+@media (max-width: 650px) {
+
+    .contenedor-sobre-mi {
+        flex-direction: column;
+    }
+
+    .descripcion {
+        text-align: center;
+    }
+
+}
